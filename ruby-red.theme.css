@@ -1,13 +1,13 @@
 /**
  * @name Ruby Red
  * @author bsolos#3399
- * @version 0.9.1
+ * @version 0.9.2
  * @description Changes discord dark theme colors to red
  * @website http://bsolos.heliohost.org
 */
 
 .theme-light {
-	--header-primary: #060607;
+    --header-primary: #060607;
     --header-secondary: #4f5660;
     --text-normal: #2e3338;
     --text-muted: #747f8d;
@@ -42,20 +42,20 @@
     --channeltextarea-background: #ebedef;
     --activity-card-background: #fff;
     --textbox-markdown-syntax: #6a7480;
-	--inset-color: #ebedef;
+    --inset-color: #ebedef;
 }
 
 .theme-dark {
     --header-primary: #fff;
     --header-secondary: #b9bbbe;
     --text-normal: #dcddde;
-    --text-muted: #ad0000;
-    --text-link: #8c4e4e;
-    --channels-default: #929292;
+    --text-muted: #dcddde;
+    --text-link: #48fffb;
+    --channels-default: #dcddde;
     --interactive-normal: #b9bbbe;
     --interactive-hover: #dcddde;
     --interactive-active: #fff;
-    --interactive-muted: #730000;
+    --interactive-muted: #828282;
     --background-primary: #950303;
     --background-secondary: #480000;
     --background-secondary-alt: #6b0000;
@@ -81,11 +81,43 @@
     --channeltextarea-background: #520000;
     --activity-card-background: #460000;
     --textbox-markdown-syntax: #825050;
-	--inset-color: #B50000;
+    --inset-color: #B50000;
 }
 
 .da-inset {
     background-color: var(--inset-color)!important;
+}
+
+.da-footer {
+    background-color: var(--background-secondary)!important;
+}
+
+.da-focused {
+    background-color: var(--background-primary)!important;
+}
+
+.da-selected {
+    background-color: var(--background-primary)!important;
+}
+
+.da-timestamp {
+    color: var(--text-normal)!important;
+}
+
+.da-uploadModal {
+    background-color: var(--background-primary)!important;
+}
+
+.da-peopleColumn {
+    background-color: var(--background-primary)!important;
+}
+
+.da-container.da-elevationBorderHigh {
+    background-color: var(--background-secondary)!important;
+}
+
+.da-option:after {
+    background: linear-gradient(90deg, var(--background-secondary), var(--background-tertiarry), 80%)!important;
 }
 
 .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
