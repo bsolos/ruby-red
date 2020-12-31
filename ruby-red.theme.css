@@ -1,7 +1,7 @@
 /**
  * @name Ruby Red
  * @author bsolos#3399
- * @version 0.9.2
+ * @version 0.9.4
  * @description Changes discord dark theme colors to red
  * @website http://bsolos.heliohost.org
 */
@@ -43,14 +43,16 @@
     --activity-card-background: #fff;
     --textbox-markdown-syntax: #6a7480;
     --inset-color: #ebedef;
+	--card-color: #f2f3f5;
+	--card-border-color: #fff;
 }
 
 .theme-dark {
-    --header-primary: #fff;
-    --header-secondary: #b9bbbe;
-    --text-normal: #dcddde;
-    --text-muted: #dcddde;
-    --text-link: #48fffb;
+    --header-primary: #FFF;
+    --header-secondary: #B9BBBE;
+    --text-normal: #DCDDDE;
+    --text-muted: #DCDDDE;
+    --text-link: #48FFFB;
     --channels-default: #dcddde;
     --interactive-normal: #b9bbbe;
     --interactive-hover: #dcddde;
@@ -75,13 +77,19 @@
     --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
     --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
     --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
-    --logo-primary: #fff;
-    --focus-primary: #f40000;
+    --logo-primary: #FFF;
+    --focus-primary: #F40000;
     --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
     --channeltextarea-background: #520000;
     --activity-card-background: #460000;
     --textbox-markdown-syntax: #825050;
     --inset-color: #B50000;
+	--card-color: #710A0A;
+	--card-border-color: #8C0000;
+}
+
+.da-body {
+	background-color: var(--background-secondary)!important;
 }
 
 .da-inset {
@@ -104,6 +112,11 @@
     color: var(--text-normal)!important;
 }
 
+#bd-pub-button {
+    background-color: var(--background-primary)!important;
+    color: var(--text-normal)!important;
+}
+
 .da-uploadModal {
     background-color: var(--background-primary)!important;
 }
@@ -112,12 +125,31 @@
     background-color: var(--background-primary)!important;
 }
 
-.da-container.da-elevationBorderHigh {
-    background-color: var(--background-secondary)!important;
+.da-quickMessage {
+	background-color: var(--channeltextarea-background)!important;
+	border-color: var(--card-border-color)!important;
 }
 
 .da-option:after {
-    background: linear-gradient(90deg, var(--background-secondary), var(--background-tertiarry), 80%)!important;
+    background: linear-gradient(90deg, var(--background-secondary), var(--background-tertiary), 80%)!important;
+}
+
+.bodyInner-245q0L {
+    background-color: var(--background-primary)!important;
+}
+
+
+.da-header.da-headerNormal {
+    background-color: var(--background-tertiary)!important;
+}
+
+.da-card.da-flex.da-directionRow {
+    background-color: var(--card-color)!important;
+	border-color: var(--card-border-color)!important;
+}
+
+.da-container.da-elevationBorderHigh {
+    background-color: var(--background-secondary)!important;
 }
 
 .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
